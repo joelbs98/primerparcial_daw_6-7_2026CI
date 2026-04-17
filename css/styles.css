@@ -1,16 +1,28 @@
+:root {
+  /*pseudoelementos para crear variables personalizadas tambien conocidos como custom properties*/
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #4682b4;
+  --secundario: rgba(255, 193, 7, 1);
+  --gris: #757575;
+}
+
 html {
   font-size: 62.5%;
 }
 body {
   font-size: 16px;
+  font-family: "Krub", sans-serif; /*colocarlo aca para que aplique a todo*/
 }
 /*1 rem = 10px*/
 .titulo {
+  /*no iniciar con numeros un class*/
   text-align: center;
   font-size: 3.8rem;
-  color: blue;
+  color: var(--primario);
+  font-family: "Times New Roman", Times, serif; /*fuentes seguras*/
 }
-span {
+.titulo span {
   font-size: 2rem;
-  color: gold;
+  color: var(--secundario);
 }
