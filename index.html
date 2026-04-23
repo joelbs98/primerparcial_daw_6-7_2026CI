@@ -8,6 +8,8 @@
     <!-- Navegador-->
     <title>Hola mundo</title>
     <!-- Titulo de la pagina-->
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,18 +27,22 @@
       <!--Utilizar un h1 por documento html-->
     </header>
 
-    <nav>
-      <a href="index.html">Inicio</a>
-      <a href="unidades.html">Unidades</a>
-      <a href="calificaciones.html">Calificaciones</a>
-    </nav>
-    <img src="imagenes/devwebpage.png" />
-    <section>
-      <p>Joel Barba Salazar</p>
-      <img src="iconos/contactar.svg" />
+    <div class="nav-bg">
+      <nav class="navegacion-principal contenedor">
+        <a href="index.html">Inicio</a>
+        <a href="unidades.html">Unidades</a>
+        <a href="calificaciones.html">Calificaciones</a>
+      </nav>
+    </div>
 
-      <p>Guayaquil, Ecuador</p>
-      <a href="#">Contactar</a>
+    <section class="hero">
+      <div class="contenido-hero">
+        <p>Joel Barba Salazar</p>
+        <img src="iconos/contactar.svg" />
+
+        <p>Guayaquil, Ecuador</p>
+        <a href="#">Contactar</a>
+      </div>
     </section>
 
     <main>
