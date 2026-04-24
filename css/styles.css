@@ -9,10 +9,12 @@
 
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 body {
   font-size: 16px;
   font-family: "Krub", sans-serif; /*colocarlo aca para que aplique a todo*/
+  background-image: linear-gradient(to top, #dfe9f3 0%, var(--blanco) 100%);
 }
 /*1 rem = 10px*/
 
@@ -85,4 +87,77 @@ body {
   background-image: url(../imagenes/devwebpage.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
+  height: 450px;
+  padding: 20px;
+  position: relative;
+}
+.contenido-hero {
+  position: absolute;
+  /*background-color: rgba(0, 0, 0, 0.7);*/
+  background-color: rgb(0 0 0 / 60%);
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  /*alinear horizontal y vertical*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenido-hero p {
+  color: var(--blanco);
+}
+
+h1 {
+  font-size: 3.8rem;
+}
+h2 {
+  font-size: 2.8rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+.boton {
+  background-color: var(--secundario);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 60%;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .boton {
+    width: auto;
+  }
+}
+
+.sombra {
+  box-shadow: 0px 5px 15px -3px #707070;
+  background-color: var(--blanco);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
+.lenguajes {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
 }
