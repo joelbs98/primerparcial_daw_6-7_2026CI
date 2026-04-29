@@ -47,68 +47,79 @@
     <main class="sombra">
       <h2>Tecnologías</h2>
       <div class="lenguajes">
-        <section>
+        <section class="lenguaje">
           <!-- Si tiene un heading como primer hijo se recomienda hacer un section-->
           <h3>HTML</h3>
+          <div class="iconos">
+            <img src="iconos/html.svg" />
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate efficitur diam, vel mollis leo.
           </p>
         </section>
-        <section>
+        <section class="lenguaje">
           <h3>CSS</h3>
+          <div class="iconos">
+            <img src="iconos/css.svg" />
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate efficitur diam, vel mollis leo.
           </p>
         </section>
-        <section>
+        <section class="lenguaje">
           <h3>Javascript</h3>
+          <div class="iconos">
+            <img src="iconos/javascript.svg" />
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate efficitur diam, vel mollis leo.
           </p>
         </section>
-        <section>
+        <section class="lenguaje">
           <h3>PHP</h3>
+          <div class="iconos">
+            <img src="iconos/php.svg" />
+          </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             vulputate efficitur diam, vel mollis php.
           </p>
         </section>
       </div>
+
+      <section>
+        <h2>Contacto</h2>
+
+        <form class="formulario">
+          <fieldset>
+            <legend>Contactanos</legend>
+
+            <div>
+              <label>Nombre</label>
+              <input type="text" placeholder="Nombre" />
+            </div>
+            <div>
+              <label>Correo</label>
+              <input type="email" />
+            </div>
+            <div>
+              <label>Teléfono</label>
+              <input type="tel" />
+            </div>
+            <div>
+              <label>Mensaje</label>
+              <textarea></textarea>
+            </div>
+            <div>
+              <input type="submit" value="Enviar" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
     </main>
-
-    <section>
-      <h2>Contacto</h2>
-
-      <form>
-        <fieldset>
-          <legend>Contactanos</legend>
-
-          <div>
-            <label>Nombre</label>
-            <input type="text" placeholder="Nombre" />
-          </div>
-          <div>
-            <label>Correo</label>
-            <input type="email" />
-          </div>
-          <div>
-            <label>Teléfono</label>
-            <input type="tel" />
-          </div>
-          <div>
-            <label>Mensaje</label>
-            <textarea></textarea>
-          </div>
-          <div>
-            <input type="submit" value="Enviar" />
-          </div>
-        </fieldset>
-      </form>
-    </section>
-
     <footer>
       <p>Todos los derechos reservados. Joel Barba Salazar</p>
     </footer>
