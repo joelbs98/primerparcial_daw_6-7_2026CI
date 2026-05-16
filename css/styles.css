@@ -269,3 +269,26 @@ h3 {
   scroll-snap-align: center;
   scroll-snap-stop: always;
 }
+
+.nueva-clase {
+  color: red;
+}
+.nueva-clase2 {
+  background-color: green;
+}
+.error {
+  background-color: red;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 1rem;
+}
+.correcto {
+  background-color: green;
+  text-align: center;
+  padding: 2rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 1rem;
+}
